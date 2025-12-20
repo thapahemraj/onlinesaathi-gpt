@@ -4,9 +4,7 @@
   "outputDirectory": "client/dist",
   "installCommand": "npm install",
   "framework": null,
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/[...slug].js" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
