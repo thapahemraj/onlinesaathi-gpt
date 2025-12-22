@@ -1,28 +1,18 @@
 {
-  "name": "@librechat/backend",
-  "version": "v0.8.2-rc1",
-  "description": "",
+  "name": "@onlinesaathi/backend",
+  "version": "1.0.0",
+  "description": "Online Saathi Backend API",
   "scripts": {
     "start": "echo 'please run this from the root directory'",
-    "server-dev": "echo 'please run this from the root directory'",
-    "test": "cross-env NODE_ENV=test jest",
-    "b:test": "NODE_ENV=test bun jest",
-    "test:ci": "jest --ci",
-    "add-balance": "node ./add-balance.js",
-    "list-balances": "node ./list-balances.js",
-    "user-stats": "node ./user-stats.js",
-    "create-user": "node ./create-user.js",
-    "invite-user": "node ./invite-user.js",
-    "ban-user": "node ./ban-user.js",
-    "delete-user": "node ./delete-user.js"
+    "server-dev": "echo 'please run this from the root directory'"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danny-avila/LibreChat.git"
+    "url": "git+https://github.com/thapahemraj/onlinesaathi-gpt.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["ai", "chat", "api"],
+  "author": "Online Saathi Team",
+  "license": "MIT",
   "_moduleAliases": {
     "~": "."
   },
@@ -30,9 +20,9 @@
     "~/*": "./*"
   },
   "bugs": {
-    "url": "https://github.com/danny-avila/LibreChat/issues"
+    "url": "https://github.com/thapahemraj/onlinesaathi-gpt/issues"
   },
-  "homepage": "https://librechat.ai",
+  "homepage": "https://onlinesaathi.com",
   "dependencies": {
     "@aws-sdk/client-bedrock-runtime": "^3.941.0",
     "@aws-sdk/client-s3": "^3.758.0",
