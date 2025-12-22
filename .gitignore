@@ -38,6 +38,8 @@ dist/
 !packages/data-schemas/dist/
 !packages/api/dist/
 !packages/client/dist/
+# Allow client dist for Vercel static deployment
+!client/dist/
 public/main.js
 public/main.js.map
 public/main.js.LICENSE.txt

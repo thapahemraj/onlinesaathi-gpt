@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <meta name="theme-color" content="#171717" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description" content="Online Saathi - An open source chat application with support for multiple AI models" />
+    <title>Online Saathi</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon-180x180.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <script>
+      const theme = localStorage.getItem('color-theme');
+      const loadingContainerStyle = document.createElement('style');
+      let backgroundColor;
+
+      if (theme === 'dark') {
+        backgroundColor = '#0d0d0d';
+      } else if (theme === 'light') {
+        backgroundColor = '#ffffff';
+      } else if (theme === 'system') {
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        backgroundColor = prefersDarkScheme ? '#0d0d0d' : '#ffffff';
+      } else {
+        backgroundColor = '#ffffff';
+      }
+
+      loadingContainerStyle.innerHTML = `
+        #loading-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          background-color: ${backgroundColor};
+        }
+      `;
+      document.head.appendChild(loadingContainerStyle);
+    </script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="./assets/markdown_highlight.YFvJ8PVJ.js"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="./assets/react-interactions.C2rPp_t4.js"></script>
+    <script type="module" crossorigin src="./assets/validation.xig1VQ4I.js"></script>
+    <script type="module" crossorigin src="./assets/math-katex.steiuUVT.js"></script>
+    <script type="module" crossorigin src="./assets/vendor.CphWSTLN.js"></script>
+    <script type="module" crossorigin src="./assets/http-client.DhyQNT5o.js"></script>
+    <script type="module" crossorigin src="i18next"></script>
+    <script type="module" crossorigin src="react-i18next"></script>
+    <script type="module" crossorigin src="./assets/i18n.CE40c5bP.js"></script>
+    <script type="module" crossorigin src="./assets/locales.DcNwsKmV.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="./assets/routing.CVoMIF_b.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="./assets/radix-ui.DdkHAinG.js"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="./assets/tanstack-vendor.DVV4vUjY.js"></script>
+    <script type="module" crossorigin src="@librechat/client"></script>
+    <script type="module" crossorigin src="./assets/utilities.BTNfF1ni.js"></script>
+    <script type="module" crossorigin src="./assets/date-utils.j-oxXFG2.js"></script>
+    <script type="module" crossorigin src="react-i18next"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="./assets/forms.DHEhur4C.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="./assets/security-ui.DXoq3Ng6.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="./assets/headlessui.Dg00_BJ1.js"></script>
+    <script type="module" crossorigin src="./assets/heic-converter.Cz_Prg7D.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="./assets/animations.BUCsF4W9.js"></script>
+    <script type="module" crossorigin src="./assets/markdown-processing.6SqW5JNx.js"></script>
+    <script type="module" crossorigin src="./assets/codemirror-state.BpbzyhTO.js"></script>
+    <script type="module" crossorigin src="./assets/codemirror-view.BXpYK4Vr.js"></script>
+    <script type="module" crossorigin src="./assets/codemirror-language.BxChQYYl.js"></script>
+    <script type="module" crossorigin src="./assets/codemirror-core.Db-SEkBm.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="./assets/sandpack.pmh-9YB0.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="./assets/virtualization.B4GvZnf2.js"></script>
+    <script type="module" crossorigin src="framer-motion"></script>
+    <script type="module" crossorigin src="./assets/index.2tWY7dSo.js"></script>
+    <script type="module" crossorigin src="react"></script>
+    <script type="module" crossorigin src="react-dom"></script>
+    <script type="module" crossorigin src="i18next"></script>
+    <script type="module" crossorigin src="react-i18next"></script>
+    <script type="module" crossorigin src="@librechat/client"></script>
+    <script type="module" crossorigin src="framer-motion"></script>
+    <link rel="stylesheet" crossorigin href="./assets/math-katex.sdXCKFqw.css">
+    <link rel="stylesheet" crossorigin href="./assets/index.BygjIXEO.css">
+  <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+  <body>
+    <div id="root">
+      <div id="loading-container"></div>
+    </div>
+  </body>
+</html>
