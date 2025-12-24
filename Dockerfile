@@ -52,6 +52,11 @@ RUN mkdir -p /app/client/public/images /app/logs /app/uploads
 RUN npm run build:packages && \
     NODE_OPTIONS="--max-old-space-size=2048" npm run build
 
+# Verify frontend build exists
+RUN ls -la /app/client/dist && \
+    test -f /app/client/dist/index.html && \
+    echo "✅ Frontend build verified successfully!"
+
 # Prune dev dependencies to reduce image size
 RUN npm prune --production && \
     npm cache clean --force
