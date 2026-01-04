@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "build": "cross-env NODE_ENV=production vite build",
-    "dev": "cross-env NODE_ENV=development vite",
-    "preview": "cross-env NODE_ENV=development vite preview"
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "
   },
   "repository": {
     "type": "git",
@@ -54,8 +54,6 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "copy-to-clipboard": "^3.3.3",
-    "cross-env": "^7.0.3",
-    "date-fns": "^3.3.1",
     "dompurify": "^3.3.0",
     "downloadjs": "^1.4.7",
     "export-from-json": "^1.7.2",
